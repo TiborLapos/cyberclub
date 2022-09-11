@@ -1,0 +1,81 @@
+
+/* Float four columns side by side */
+.Movie_column {
+  float: left;
+  max-width: 300px;
+  margin-bottom: 100px;
+  display: flex;
+  margin-left: 50px; /* Same as the width of the sidenav */
+}
+.Movie_row{
+    margin-left: 140px;
+}
+
+.Movie_row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+
+.Movie_photo{
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Style the counter cards */
+.Movie_card {
+    margin-top: 25px;
+    height: 400px;
+    max-width: 300px;
+}
+
+.Movie_info{
+    background-color: #262626;
+    height: 70px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Movie_info h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    padding-left: 16px;
+    padding-top: 5px;
+}
+.Movie_info p{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    padding-left: 16px;
+    padding-top: 5px;
+}
+
+
+.Movie_card img{
+    transition: transform .5s; /* Animation */
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.Movie_column img:hover{
+    filter: blur(1px);
+    filter: grayscale(40%);
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.Movie_Table{
+    background-color: red;
+    float: left;
+    width: 100%;
+}

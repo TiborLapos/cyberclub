@@ -7,6 +7,8 @@ import Remotepc from "./Remote_pc/Remotepc";
 import Login from "./Login_Register/Login"
 import Test1 from "./Test1"
 import User from "./Login_Register/User"
+import Movies from "./Movies/Movies";
+import Create from "./Movies/Create"
 const OtherComponent = React.lazy(() => import('./Nav.css'));
 
 
@@ -23,6 +25,7 @@ function Navbar() {
             <div className="sidenav">
             <Link to="/">Home</Link>
             <Link to="/remotepc">Servers</Link>
+            <Link to="/movies">Movies</Link>
             <Link to="/user">Login</Link>
           </div>}
         {(() => {
@@ -45,6 +48,8 @@ function Navbar() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/remotepc" element={<Remotepc />} />
                     <Route path="/test1" element={<Test1 />} />
+                    <Route path="/movies" element={<Movies />} />
+                    <Route path="/create" element={< Create/>} />
                     <Route path="/user" element={<User />} />
                     <Route element={ <Home/> } />
                     <Route path="*" element={<Home/>} />

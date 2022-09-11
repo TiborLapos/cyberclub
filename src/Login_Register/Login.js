@@ -66,7 +66,7 @@ function Login() {
   return (
     <>
         {cookies.Name == null &&
-        <div className="Login_Register">  
+        <div>  
             {resgistere == true &&
                <div className="registration">
                     <label>Username</label>
@@ -95,14 +95,6 @@ function Login() {
                 <h2>{loginStatus}</h2>
             </div>
         </div>
-        }
-        {cookies.Name &&
-             <div className="Login_Register">  
-                <h1>Profile:</h1>
-                <label>Name: {cookies.Name}</label>
-                <br></br>
-                <button onClick={logout}>Logout</button>
-             </div>
         }
     </>
   );

@@ -34,7 +34,7 @@ function Test() {
 
   const server_data = (
     <>
-      <table>
+      <table className="Remote_Table">
         <thead>
           <tr>
             <th>PC</th>
@@ -62,9 +62,7 @@ function Test() {
   )
   return (
     <>
-      <div className="class_table">
-            {server_data}
-      </div>
+     {server_data}
   </>
   );
 }

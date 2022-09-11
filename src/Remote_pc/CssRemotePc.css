@@ -1,10 +1,10 @@
-table {
+.Remote_Table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     font-size: 16px;
   }
-table th{
+.Remote_Table th{
   text-align: left;
 }
 
@@ -16,14 +16,11 @@ tbody:nth-child(even) {
 }
 
 
-.class_table{
-    margin-top: 20px;
-}
-table{
+.Remote_Table{
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
+
 .class_table h1{
     text-align: center;
     padding-bottom: 10px;

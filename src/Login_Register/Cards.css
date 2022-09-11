@@ -1,0 +1,173 @@
+/* Float four columns side by side */
+.column {
+    width: 250px;
+    padding: 0 10px;
+  }
+.column1 {
+  width: 600px;
+  padding: 0 10px;
+  }
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+.Login_Register {
+    font-family: 'Roboto';
+    font-size: 68px; /* Increased text to enable scrolling */
+    padding: 2px 16px;
+    padding-left: 15px;
+}
+
+.Login_Register h1{
+  text-align: left;
+  font-size: 35px; 
+  font-weight: 400;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.Login_Register p{
+    font-size: 15px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.Login_Register button{
+    margin-top: 0px;
+}
+
+.Login_Register button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    border: 1px solid #008CBA;
+    width: 190px;
+    height: 40px;
+    background-color: white;
+    transition-duration: 0.4s;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.Login_Register button:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+
+.card {
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 250px;
+    border-radius: 1%;
+  }
+
+.card_edit {
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 350px;
+    border-radius: 1%;
+  }
+
+.usersettings{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.usersettings input{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 38px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 15px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row_useer {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row_user:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column_user{
+  float: left;
+  width: 43%;
+  padding-right: 35px;
+}
+
+.column_email{
+  width: 93%;
+}
+.column_buttons{
+  display: inline-block; 
+  margin-left: 8%;
+  margin-top: 20px;
+}
+
+
+
+.Set_User_Settings{
+  box-sizing: border-box;
+}
+
+.Set_User_Settings {
+  font-family: 'Roboto';
+  padding: 2px 16px;
+  padding-left: 15px;
+}
+
+.Set_User_Settings h1{
+text-align: left;
+font-size: 35px; 
+font-weight: 400;
+margin-left: 10px;
+margin-bottom: 0;
+margin-top: 20px;
+}
+.Set_User_Settings p{
+  font-size: 15px;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.Set_User_Settings button{
+  border: 1px solid #008CBA;
+  margin-right: 50px;
+  width: 190px;
+  height: 40px;
+  background-color: white;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.Set_User_Settings button:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+
