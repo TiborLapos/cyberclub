@@ -17,6 +17,17 @@
     color: #818181;
     display: block;
   }
+  .sidenav .D_Icon{
+    color: #818181;
+    
+  }
+  .sidenav a:hover .D_Icon{
+    color: #f1f1f1;
+  }
   .sidenav a:hover {
     color: #f1f1f1;
+  }
+
+  svg{
+    color: white;
   }

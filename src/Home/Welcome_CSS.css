@@ -1,0 +1,101 @@
+.Welcome_board{
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 10px;
+    border: 1px solid rgb(224, 224, 227);
+    box-shadow: none;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(137, 117, 251) 0%, rgb(116, 107, 231) 35%), linear-gradient(rgb(137, 117, 251) 0%, rgb(111, 76, 235) 50%), rgb(111, 76, 235);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 5px;
+    height: 180px;
+
+    display: grid;
+    grid-template-areas: 'left center right';
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+}
+.Welcome_Board_Left h1{
+    margin: 0px 0px 0.35em;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.Welcome_Board_Left{
+    grid-area: left;  
+    padding: 20px;  
+
+}
+.Welcome_Board_Left p {
+    margin: 0px 0px 0.35em;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    max-width: 40em;
+    text-align: left;
+}
+
+.Welcome_Board_Right{
+    grid-area: right;
+    height: 150px;
+    width: auto;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.Welcome_Board_Right img {
+    width: auto;
+    height: 100%;
+    float: left;
+
+}
+
+.Welcome_Buttons button{
+    float: left;
+    display: inline-flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(79, 60, 201);
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.Welcome_Buttons button:hover {
+    background-color: rgba(103, 81, 248, 0.869);
+}
+#Warning_Title{
+    font-size: 30px;
+}
+#Warning_Alert{
+    font-size: 18px;
+}

@@ -9,6 +9,7 @@ import Test1 from "./Test1"
 import User from "./Login_Register/User"
 import Movies from "./Movies/Movies";
 import Create from "./Movies/Create"
+import DashboardIcon from '@mui/icons-material/Dashboard';
 const OtherComponent = React.lazy(() => import('./Nav.css'));
 
 
@@ -26,7 +27,7 @@ function Navbar() {
             <Link to="/">Home</Link>
             <Link to="/remotepc">Servers</Link>
             <Link to="/movies">Movies</Link>
-            <Link to="/user">Login</Link>
+            <Link to="/user">Profile</Link>
           </div>}
         {(() => {
         if (cookies.Name  == null) {

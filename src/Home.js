@@ -3,6 +3,12 @@ import { useCookies } from 'react-cookie'
 import Test from './Remote_pc/Test';
 import Profile from './Login_Register/Profile';
 import './Default.css';
+import './Home/Welcome'
+import Welcome from "./Home/Welcome";
+import DeleteIcon from '@mui/icons-material/Delete';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import Welcome_Modal from "./Home/Welcome_Modal";
+
 
 
 function Home() {
@@ -18,9 +24,11 @@ function Home() {
       }
       {cookies.Name  &&
         <div className="App">
+          {Welcome()}
           {Profile()}
           <div className='pc_list'>
-            {Test()}
+            {/*Test()*/}
+            {Welcome_Modal()}
           </div>
         </div>
       }
