@@ -3,12 +3,11 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import Stack from '@mui/material/Stack';
 import './Welcome_CSS.css'
+import { red } from '@mui/material/colors';
 
 
 const style = {
@@ -36,7 +35,7 @@ export default function Welcome_Modal() {
         <Box className='Welcome_warning' sx={style}>
             <Alert severity="warning" id='Warning_Icon'>
                 <AlertTitle id='Warning_Title'>Warning</AlertTitle>
-                <a id='Warning_Alert'>This is a warning alert — <strong>check it out!</strong></a>
+                <a id='Warning_Alert'>This is a warning alert — <strong>This website is in develompend mode</strong></a>
             </Alert>
         </Box>
       </Modal>

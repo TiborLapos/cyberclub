@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Axios from 'axios'
-import './Default.css';
-import './Remote_pc/CssRemotePc.css'
+import '../Default/Default.css';
+import '../Remote_pc/CssRemotePc.css'
 
 
 

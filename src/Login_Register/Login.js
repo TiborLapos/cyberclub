@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {useEffect} from 'react';
-import '../Nav.css';
+import '../Navigation/Nav.css';
 import './Login.css';
 import Axios from 'axios'
 import { useCookies } from 'react-cookie'

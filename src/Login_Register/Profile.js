@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useCookies } from 'react-cookie'
 import {Link} from "react-router-dom";
-import '../Nav.css';
+import '../Navigation/Nav.css';
     
 
 function Profile() {

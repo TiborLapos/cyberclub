@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home"
 import Login from "./Login";
-import App from "./App";
+import App from "../App";
 
 
 const Navigate = () => {

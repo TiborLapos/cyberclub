@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../Nav.css';
+import '../Navigation/Nav.css';
 
 function User_Change() {
   return (

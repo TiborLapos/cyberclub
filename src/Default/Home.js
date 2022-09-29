@@ -1,13 +1,12 @@
 import {Link } from "react-router-dom";
 import { useCookies } from 'react-cookie'
-import Test from './Remote_pc/Test';
-import Profile from './Login_Register/Profile';
+import Test from "../Remote_pc/Test";
+import Profile from "../Login_Register/Profile";
 import './Default.css';
-import './Home/Welcome'
-import Welcome from "./Home/Welcome";
+import Welcome from "../Home/Welcome";
 import DeleteIcon from '@mui/icons-material/Delete';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import Welcome_Modal from "./Home/Welcome_Modal";
+import Welcome_Modal from "../Home/Welcome_Modal";
 
 
 
