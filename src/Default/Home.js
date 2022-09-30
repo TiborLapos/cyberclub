@@ -27,7 +27,7 @@ function Home() {
           {Profile()}
           <div className='pc_list'>
             {/*Test()*/}
-            {Welcome_Modal()}
+            {/*Welcome_Modal()*/}
           </div>
         </div>
       }

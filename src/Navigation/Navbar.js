@@ -9,6 +9,7 @@ import Test1 from "../Default/Test1"
 import User from "../Login_Register/User"
 import Movies from "../Movies/Movies";
 import Create from "../Movies/Create"
+import Profile from "../Profile/Profile"
 import DashboardIcon from '@mui/icons-material/Dashboard';
 const OtherComponent = React.lazy(() => import('./Nav.css'));
 
@@ -51,6 +52,7 @@ function Navbar() {
                     <Route path="/test1" element={<Test1 />} />
                     <Route path="/movies" element={<Movies />} />
                     <Route path="/create" element={< Create/>} />
+                    <Route path="/profile/:id" element={< Profile/>} />
                     <Route path="/user" element={<User />} />
                     <Route element={ <Home/> } />
                     <Route path="*" element={<Home/>} />

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import { Link } from "react-router-dom"
 import Axios from 'axios'
 import '../Default/Default.css'
 import './CssRemotePc.css'
@@ -49,7 +49,7 @@ function Test() {
             servers.map((server) => (
               <tbody key={server.name}>
                 <tr>
-                  <td className="pcname">{server.name}</td>
+                  <td className="pcname"><Link to={`/profile/${server.name}`}>{server.name}</Link></td>
                     <td> 
                         <div className="online-indicator">
                             <span className="blink"></span>
