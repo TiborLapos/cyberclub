@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes, Link } from "react-router-dom"
 import { useCookies } from 'react-cookie'
 import Home from "../Default/Home";
-import Test from "../Remote_pc/Test";
 import Remotepc from "../Remote_pc/Remotepc";
 import Login from "../Login_Register/Login"
 import Test1 from "../Default/Test1"
@@ -10,8 +9,7 @@ import User from "../Login_Register/User"
 import Movies from "../Movies/Movies";
 import Create from "../Movies/Create"
 import Profile from "../Profile/Profile"
-import DashboardIcon from '@mui/icons-material/Dashboard';
-const OtherComponent = React.lazy(() => import('./Nav.css'));
+import Getjson from "../Testing/Getjson"
 
 
 function Navbar() {
@@ -54,6 +52,7 @@ function Navbar() {
                     <Route path="/create" element={< Create/>} />
                     <Route path="/profile/:id" element={< Profile/>} />
                     <Route path="/user" element={<User />} />
+                    <Route path="/getjson" element={<Getjson />} />
                     <Route element={ <Home/> } />
                     <Route path="*" element={<Home/>} />
                 </Routes>

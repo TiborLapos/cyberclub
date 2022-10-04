@@ -14,6 +14,8 @@ function Login() {
     const [password, SetPassword] = useState("")
     const [registerStatus, SetregisterStatus] = useState("")
     const [loginStatus, SetLoginStatus] = useState("")
+
+
     const resgistere = false
     function refreshPage() {
         window.location.reload(false);
@@ -46,27 +48,22 @@ function Login() {
             if(response.data.message){
                 SetLoginStatus(response.data.message)
             }else{
-                //console.log(response.data[0]);
                 handle();
                 SetLoginStatus(response.data[0].name)
             }
         })
     }
-    
     const logout = () => {
         removeCookie('Name', { path: '/' })
         removeCookie('Password', { path: "/" });
+        removeCookie('Uid', { path: "/" });
         refreshPage();
     }
 
-     
-    
-
-    
   return (
     <>
         {cookies.Name == null &&
-        <div>  
+        <div className="App">  
             {resgistere == true &&
                <div className="registration">
                     <label>Username</label>
@@ -89,7 +86,7 @@ function Login() {
                     SetUsername(e.target.value)
                 }}/>
                 <input type="password" placeholder="Password" onChange={(e) => {
-                    SetPassword  (e.target.value)
+                    SetPassword(e.target.value)
                 }}/>
                 <button onClick={login}>Login</button>
                 <h2>{loginStatus}</h2>

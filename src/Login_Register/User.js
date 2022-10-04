@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import '../Navigation/Nav.css';
-import { useCookies } from 'react-cookie'
-import {Link} from "react-router-dom";
 import Profile from "./Profile";
 import User_Change from "./User_Change";
 import './Cards.css'

@@ -10,7 +10,7 @@ function Test() {
   const [servers, setServer] = useState();
   const MINUTE_MS = 10000;
 
-  useEffect(() => {
+  useEffect(() => {   
     Axios.post("http://localhost:3001/test", {
         }).then((response) =>{
             if(response.data.message){
@@ -21,7 +21,7 @@ function Test() {
             }
         })
     const interval = setInterval(() => {
-        console.log("useEffect --> Time")
+        //console.log("useEffect --> Time")
         Axios.post("http://localhost:3001/test", {
         }).then((response) =>{
             if(response.data.message){
@@ -32,8 +32,10 @@ function Test() {
             }
         })
     }, MINUTE_MS);
-    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
-  }, [])
+    return () => {
+      clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+    }
+  }, [setServer])
 
   const server_data = (
     <>

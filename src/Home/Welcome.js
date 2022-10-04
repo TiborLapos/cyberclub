@@ -11,7 +11,7 @@ function Welcome() {
     <>
     <div className="Welcome_board">
         <div className="Welcome_Board_Left">
-            <h1>Welcome to the Cyber Club Admin Panel </h1>
+            <h1>Welcome to the Cyber Club Admin Panel</h1>
             <p>Welcom at the admin panel of the Cyber Club website.Explore the website and use your products. If you don't know hot you get here pleas log out and report the incident.</p>
             <div className="Welcome_Buttons">
                 <Button variant="contained" endIcon={<ComputerOutlinedIcon/>}>Get started</Button>
