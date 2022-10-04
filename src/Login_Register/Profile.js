@@ -5,9 +5,8 @@ import '../Navigation/Nav.css';
     
 
 function Profile() {
-    const [cookies, removeCookie] = useCookies(["name"]);
+    const [cookies, removeCookie] = useCookies();
     const [profile, setProfile] = useState("");
-    let name = cookies.Name;
     
     function refreshPage() {
         window.location.reload(false);
@@ -22,7 +21,7 @@ function Profile() {
     useEffect(() => {
         function GetData(){
             Axios.post("http://localhost:3001/profile", {
-                username: name, 
+                username: cookies.Name, 
                 })
                 .then((response) =>{
                         if(response.data.message){
@@ -41,9 +40,7 @@ function Profile() {
       return () => {
           //console.log("usefect unount")
           };
-  }, [])
-
-
+  }, [cookies.Name])
 
 
   return (
@@ -53,7 +50,7 @@ function Profile() {
             <div className="card">
                 <div className="Login_Register">  
                     <h1>Profile</h1>
-                    <p>Name: {cookies.Name}</p>
+                    <p>Names: {cookies.Name}</p>
                     <p>UIDS: {profile.uuid}</p>
                     <p><button onClick={logout}>Logout</button></p>
                     </div>

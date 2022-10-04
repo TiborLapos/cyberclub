@@ -1,4 +1,5 @@
 import Test from "./Test";
+import React from 'react';
 
 function Remotepc() {
   return (

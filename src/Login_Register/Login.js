@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import {useEffect} from 'react';
 import '../Navigation/Nav.css';
 import './Login.css';
 import Axios from 'axios'
 import { useCookies } from 'react-cookie'
-import {Link} from "react-router-dom";
 
 function Login() {
-    const [cookies, setCookie, removeCookie] = useCookies(["name"]);
+    const [cookies, setCookie] = useCookies(["name"]);
     const [usernameReg, setUsernameReg] = useState("");
     const [passwordReg, setPasswordReg] = useState("")
     const [username, SetUsername] = useState("");
@@ -53,18 +51,13 @@ function Login() {
             }
         })
     }
-    const logout = () => {
-        removeCookie('Name', { path: '/' })
-        removeCookie('Password', { path: "/" });
-        removeCookie('Uid', { path: "/" });
-        refreshPage();
-    }
+
 
   return (
     <>
         {cookies.Name == null &&
         <div className="App">  
-            {resgistere == true &&
+            {resgistere === true &&
                <div className="registration">
                     <label>Username</label>
                     <input type="text" onChange={(e) => {

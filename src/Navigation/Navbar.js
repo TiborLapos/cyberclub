@@ -4,7 +4,6 @@ import { useCookies } from 'react-cookie'
 import Home from "../Default/Home";
 import Remotepc from "../Remote_pc/Remotepc";
 import Login from "../Login_Register/Login"
-import Test1 from "../Default/Test1"
 import User from "../Login_Register/User"
 import Movies from "../Movies/Movies";
 import Create from "../Movies/Create"
@@ -47,7 +46,6 @@ function Navbar() {
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/remotepc" element={<Remotepc />} />
-                    <Route path="/test1" element={<Test1 />} />
                     <Route path="/movies" element={<Movies />} />
                     <Route path="/create" element={< Create/>} />
                     <Route path="/profile/:id" element={< Profile/>} />
